@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Location-Pin-Filled">
+        <path d="M400,33.333C234.333,33.333 100,167.667 100,333.333C100,558.333 400,766.667 400,766.667C400,766.667 700,558.333 700,333.333C700,167.667 565.667,33.333 400,33.333ZM400,433.333C344.667,433.333 300,388.667 300,333.333C300,278 344.667,233.333 400,233.333C455.333,233.333 500,278 500,333.333C500,388.667 455.333,433.333 400,433.333Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+</svg>

@@ -20,32 +20,71 @@
   src: url(fonts/ARCENA.ttf)
 }
 
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(fonts/Montserrat-Medium.ttf)
+}
+
 body {
+  margin: 0;
   background: center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  background-image: url('images/background.webp');
 }
 
-.main {
-  margin: auto;
-  margin-top: 25vh;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.25em;
+}
+
+.logo {
   text-align: center;
-  font-size: 175px;
+  font-size: 3em;
   font-family: Orange-Lemonade;
   color: white;
-  white-space: nowrap;
-  text-shadow: 0px 0px 34px rgba(0,0,0,0.35);
   transition-property: transform;
   transition-duration: .4s;
   transition-timing-function: ease-in-out;
 }
 
-.main:hover {
+.logo:hover {
   /* Uncomment to enable scale change on hover */
   /* transform: scale(1.05); */
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-family: Montserrat-Medium;
+  color: white;
+  min-width: 25%;
+  justify-content: flex-end;
+}
+
+.location img {
+  max-height: 1em;
+  margin-right: 0.25em;
+}
+
+.location img:nth-of-type(2) {
+  max-height: 1.25em;
+  margin-right: 0;
+  margin-left: 0.25em;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  margin: 2em 10em;
+}
+
+a:link {
+    color: #006E9F;
 }
 
 .secondary {
@@ -54,7 +93,6 @@ body {
   font-size: 50px;
   font-family: Dosis-Light;
   color: white;
-  text-shadow: 0px 0px 34px rgba(0,0,0,0.35);
 }
 
 #construction {
@@ -67,6 +105,12 @@ body {
 
 #apostrophe {
   font-family: AR-CENA !important;
+}
+
+main {
+  font-family: Montserrat-Medium;
+  text-align: center;
+  color: white;
 }
 
 .footer {
@@ -82,7 +126,6 @@ body {
   font-size: 40px;
   font-family: Dosis-Medium;
   color: white;
-  text-shadow: 0px 0px 34px rgba(0,0,0,0.35);
   -webkit-border-top-left-radius: 25px;
   -webkit-border-top-right-radius: 25px;
   -moz-border-radius-topleft: 25px;
@@ -101,3 +144,53 @@ body {
 #location {
   max-height: 45px;
 }
+
+.gallery-container {
+  /* width: 80%; */
+}
+
+.selected-image {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.selected-image img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 4px;
+}
+
+.image-gallery {
+  display: flex;
+  overflow-x: scroll; /* Hide the overflow to create the illusion of infinite scrolling */
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+  scroll-behavior: smooth;
+  clip-path: inset(0 2% 0 2%);
+}
+
+.image-gallery::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+
+.gallery-item {
+  display: inline-block;
+  padding: 3px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.gallery-item img {
+  max-width: 128px;
+  max-height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.gallery-item img.selected {
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
