@@ -83,7 +83,7 @@ header {
 
 .intro-text {
   font-size: 2.1vh;
-  margin: 0 10em;
+  margin: 0 10vw;
 }
 
 a:link {
@@ -200,3 +200,26 @@ main {
   border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+  body {
+    overflow-y: visible;
+  }
+
+  .logo {
+    font-size: 4.5vh;
+  }
+
+  
+  .location img {
+    max-height: 2em;
+  }
+
+  .location p {
+    font-size: 1em;
+  }
+
+  .intro-text {
+    margin: 0 2em;
+    font-size: 1em;
+  }
+}
