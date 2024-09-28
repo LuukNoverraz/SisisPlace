@@ -206,9 +206,14 @@ main {
   }
 
   .logo {
-    font-size: 4.5vh;
+    font-size: 5.5vh;
+    white-space: nowrap;
+    margin: 3vw;
   }
 
+  .location {
+    max-width: 50vw;
+  }
   
   .location img {
     max-height: 2em;
